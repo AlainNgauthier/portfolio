@@ -1,3 +1,3 @@
 # portfolio
 
- Esse projeto abriga meu humilde portfólio. 
+ Portfólio em construção...
