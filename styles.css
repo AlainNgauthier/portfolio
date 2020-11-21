@@ -3,7 +3,6 @@
 }
 .Page{
     display: flex;
-    background-color: darkgray;
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
     height: 100vh;
@@ -20,6 +19,7 @@
 .PageBanner{
     display: flex;
     justify-content: space-around;
+    background-color: darkgray;
     height: 50%;
 }
 
@@ -58,8 +58,44 @@ img{
 .PageCV{
     display: flex;
     align-items: center;
-    padding: 10px;
     height: 50%;
     color: blanchedalmond;
     background-color: black;
+}
+.PageCvWrapper{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.photo{
+    width: 220px;
+    height: 250px;
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photoWrap{
+    width: 180px;
+    height: 230px;
+}
+
+.academic{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+}
+.academicH3{
+    margin: 10px;
+}
+.academicGraduation{
+    margin: 10px;
+    padding-left: 7px;
+}
+.academicProjects{
+    margin: 10px;
+    padding-left: 10px;
 }
