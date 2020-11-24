@@ -16,8 +16,9 @@ body{
     padding: 1rem;
     box-sizing: border-box;
 }
+
 .header{
-    color: white;
+    color: #ffff;
     height: 90vh;
     background-image: linear-gradient(to right bottom, #1c92d2c9,
                                                        #f2fcfe9d),
@@ -30,15 +31,29 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .header__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
 }
-.header__content-title{
+
+.header__title{
+    /*text-transform: uppercase;*/
     text-align: center;
 }
+
+.header__title-primary{
+    display: block;
+}
+
+.header__title-sub{
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+}
+
 .header__content-logo{
     margin: 1rem;
     width: 17rem;
@@ -48,6 +63,7 @@ body{
     align-items: center;
     clip-path: circle(50% at 50% 50%);
 }
+
 .header__content-logo img{
     margin-top: 14rem;
     margin-right: 11rem;
