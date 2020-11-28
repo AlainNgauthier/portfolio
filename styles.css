@@ -6,18 +6,18 @@
     box-sizing: inherit;
 }
 
-html{
+html {
     /* 10/16px = 0.625, 1rem=10px*/
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 1rem;
     box-sizing: border-box;
 }
 
-.header{
+.header {
     color: #ffff;
     height: 90vh;
     background-image: linear-gradient(to right bottom, #1c92d2c9,
@@ -32,14 +32,16 @@ body{
     align-items: center;
 }
 
-.header__content{
+.header__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
+
+    backface-visibility: hidden;
 }
 
-.header__title{
+.header__title {
     text-align: center;
 }
 
@@ -47,19 +49,20 @@ body{
     display: block;
 
     animation-name: moveInleft;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
-.header__title-sub{
+.header__title-sub {
     display: block;
     font-size: 2rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
 
     animation-name: moveInRight;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    /* animation: moveInRight 2s; */
 }
 
-.header__content-logo{
+.header__content-logo {
     margin: 1rem;
     width: 17rem;
     height: 23rem;
@@ -67,6 +70,9 @@ body{
     justify-content: center;
     align-items: center;
     clip-path: circle(50% at 50% 50%);
+
+    animation-name: moveUp;
+    animation-duration: 2s;
 }
 
 .header__content-logo img{
@@ -106,11 +112,63 @@ body{
     }
 } 
 
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.footer {
+    color: #ffff;
+    background-color: #191B1E;
+    height: 22rem;
+    padding: 10rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__content__primary{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+
+.footer__content__second{
+    
+}
 
 /*
+.footer__content {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
 
+.footer__content-primary{
+    
+}
+
+.footer__content-sub{
+
+}
+*/
+/*
     "Nothing happens without software. And what is software?
     Software is a set of rules." - Robert C. Martin
+
+    background: linear-gradient(to right top, #1c92d2c9,
+                                          #f2fcfe9d);
+    background: linear-gradient(245deg, #18f0b8, #E8EAEB, #FCFF00);
+    animation: Gradient 5s ease infinite;
+    background-size: 600% 600%;
      
  */
