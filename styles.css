@@ -40,18 +40,23 @@ body{
 }
 
 .header__title{
-    /*text-transform: uppercase;*/
     text-align: center;
 }
 
 .header__title-primary{
     display: block;
+
+    animation-name: moveInleft;
+    animation-duration: 3s;
 }
 
 .header__title-sub{
     display: block;
     font-size: 2rem;
     letter-spacing: 1rem;
+
+    animation-name: moveInRight;
+    animation-duration: 3s;
 }
 
 .header__content-logo{
@@ -68,3 +73,44 @@ body{
     margin-top: 14rem;
     margin-right: 11rem;
 }
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
+
+
+/*
+
+    "Nothing happens without software. And what is software?
+    Software is a set of rules." - Robert C. Martin
+     
+ */
