@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -126,7 +128,6 @@ body {
 .footer {
     color: #ffff;
     background-color: #191B1E;
-    height: 22rem;
     padding: 10rem;
     font-size: 1.5rem;
     display: flex;
@@ -140,11 +141,39 @@ body {
     line-height: 2rem;
 }
 
+.footer__content__second-midia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
 
+.linkedin img{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.github img{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.instagram img{
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/*
 .footer__content__second{
     
 }
-
+*/
 /*
 .footer__content {
     font-size: 2rem;
